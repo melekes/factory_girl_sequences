@@ -5,10 +5,6 @@ FactoryGirl.define do
     n
   end
 
-  sequence :float do |n|
-    n.to_f
-  end
-
   sequence :string do |n|
     "string-#{n}"
   end
