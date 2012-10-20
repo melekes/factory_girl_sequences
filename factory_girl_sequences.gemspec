@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Anton Kalyaev"]
   gem.email         = ["anton.kalyaev@gmail.com"]
   gem.description   = %q{factory_girl_sequences provides a collection of useful FactoryGirl sequences}
-  gem.summary       = %q{Collection of FactoryGirl sequences}
+  gem.summary       = %q{Collection of useful FactoryGirl sequences}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
