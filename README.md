@@ -1,4 +1,4 @@
-# FactoryGirlSequences
+# FactoryGirlSequences [![Build Status](https://secure.travis-ci.org/akalyaev/factory_girl_sequences.png "Build Status")](http://travis-ci.org/akalyaev/factory_girl_sequences)
 
 Collection of useful [FactoryGirl](https://github.com/thoughtbot/factory_girl)
 sequences.
