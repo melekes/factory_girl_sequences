@@ -1,83 +1,43 @@
-FactoryGirl.define do
-  # == Basic types ==
+module FactoryGirl
 
-  sequence :integer do |n|
-    n
+  def self.register_default_sequences
+    # basic types
+    register_sequence(Sequence.new(:integer) { |n| n })
+    register_sequence(Sequence.new(:string) { |n| "string-#{n}" })
+    register_sequence(Sequence.new(:date) { Date.today })
+    register_sequence(Sequence.new(:datetime) { Time.current })
+    register_sequence(Sequence.new(:boolean) { |n| [false, true][n%2] })
+
+    # personal
+    register_sequence(Sequence.new(:name, :aliases => [:login, :first_name, :last_name]) { |n| "name-#{n}" })
+    register_sequence(Sequence.new(:password) { |n| "password-#{n}" })
+    register_sequence(Sequence.new(:email) { |n| "person#{n}@example.com" })
+
+    # network
+    register_sequence(Sequence.new(:ip_address) { |n| "192.168.0.#{n%256}" })
+    register_sequence(Sequence.new(:ip_subnet) { |n| "192.168.#{n%256}.0" })
+    register_sequence(Sequence.new(:mac_address) { |n| "01:23:45:67:89:" + ("%02x" % "#{n%256}") })
+
+    # post (or article)
+    register_sequence(Sequence.new(:title) { |n| "Title #{n}" })
+    register_sequence(Sequence.new(:body, :aliases => [:description]) { |n| "body-#{n}" })
+    register_sequence(Sequence.new(:slug) { |n| "slug-#{n}" })
+
+    # other
+    register_sequence(Sequence.new(:domain) { |n| "example#{n}.com" })
+    register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
+    register_sequence(Sequence.new(:color) { |n| "%06d" % n })
+    register_sequence(Sequence.new(:checksum) { |n| n })
   end
 
-  sequence :string do |n|
-    "string-#{n}"
-  end
-
-  sequence :date do
-    Date.today
-  end
-
-  sequence :datetime do
-    Time.current
-  end
-
-  sequence :boolean do |n|
-    [false, true][n%2]
-  end
-
-  # == Personal ==
-
-  sequence :name, :aliases => [:login, :first_name, :last_name] do |n|
-    "name-#{n}"
-  end
-
-  sequence :password do |n|
-    "password-#{n}"
-  end
-
-  sequence :email do |n|
-    "person#{n}@example.com"
-  end
-
-  # == Network ==
-
-  sequence :ip_address do |n|
-    "192.168.0.#{n%256}"
-  end
-
-  sequence :ip_subnet do |n|
-    "192.168.#{n%256}.0"
-  end
-
-  sequence :mac_address do |n|
-    "01:23:45:67:89:" + ("%02x" % "#{n%256}")
-  end
-
-  # == Post (article) ==
-
-  sequence :title do
-    "Title #{n}"
-  end
-
-  sequence :body, :aliases => [:description] do |n|
-    "body-#{n}"
-  end
-
-  sequence :slug do |n|
-    "slug-#{n}"
-  end
-
-  # == Other ==
-
-  sequence :domain do |n|
-    "example#{n}.com"
-  end
-
-  sequence :subdomain do |n|
-    "blog#{n}"
-  end
-
-  sequence :color do |n|
-    "%06d" % n
-  end
-
-  sequence :checksum do |n|
-    n
+  # FIXME [AK] Monkey-patching here. There should be another way around.
+  def self.reload
+    reset_configuration
+    register_default_strategies
+    register_default_callbacks
+    register_default_sequences
+    find_definitions
   end
 end
+
+FactoryGirl.register_default_sequences
