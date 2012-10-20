@@ -62,6 +62,11 @@ Or install it yourself as:
     <td>"person1@example.com"</td>
   </tr>
   <tr>
+    <td>:phone</td>
+    <td>-</td>
+    <td>"80100001110"</td>
+  </tr>
+  <tr>
     <td>:ip_address</td>
     <td>-</td>
     <td>"192.168.0.1"</td>
@@ -83,7 +88,7 @@ Or install it yourself as:
   </tr>
   <tr>
     <td>:body</td>
-    <td>:description</td>
+    <td>:description, :about</td>
     <td>"body-1"</td>
   </tr>
   <tr>
