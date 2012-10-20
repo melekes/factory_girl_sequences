@@ -15,26 +15,103 @@ Or install it yourself as:
 
 ## Sequences
 
-Format: name (aliases) - example
-
-- :integer - 1
-- :string - "string-1"
-- :date - Sat, 20 Oct 2012
-- :datetime - Sat, 20 Oct 2012 16:38:59 MSK +04:00
-- :boolean - true | false
-- :name (:login, :first_name, :last_name) - "name-1"
-- :password - "password-1"
-- :email - "person1@example.com"
-- :ip_address - "192.168.0.1"
-- :ip_subnet - "192.168.10.0"
-- :mac_address - "01:23:45:67:89:01"
-- :title - "Title 1"
-- :body (:description) - "body-1"
-- :slug - "slug-1"
-- :domain - "example1.com"
-- :subdomain - "blog1"
-- :color - "333333"
-- :checksum - 1
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Aliases</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>:integer</td>
+    <td>-</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>:string</td>
+    <td>-</td>
+    <td>"string-1"</td>
+  </tr>
+  <tr>
+    <td>:date</td>
+    <td>-</td>
+    <td>Sat, 20 Oct 2012</td>
+  </tr>
+  <tr>
+    <td>:datetime</td>
+    <td>-</td>
+    <td>Sat, 20 Oct 2012 16:38:59 MSK +04:00</td>
+  </tr>
+  <tr>
+    <td>:boolean</td>
+    <td>-</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>:name</td>
+    <td>:login, :first_name, :last_name</td>
+    <td>"name-1"</td>
+  </tr>
+  <tr>
+    <td>:password</td>
+    <td>-</td>
+    <td>"password-1"</td>
+  </tr>
+  <tr>
+    <td>:email</td>
+    <td>-</td>
+    <td>"person1@example.com"</td>
+  </tr>
+  <tr>
+    <td>:ip_address</td>
+    <td>-</td>
+    <td>"192.168.0.1"</td>
+  </tr>
+  <tr>
+    <td>:ip_subnet</td>
+    <td>-</td>
+    <td>"192.168.10.0"</td>
+  </tr>
+  <tr>
+    <td>:mac_address</td>
+    <td>-</td>
+    <td>"01:23:45:67:89:01"</td>
+  </tr>
+  <tr>
+    <td>:title</td>
+    <td>-</td>
+    <td>"Title 1"</td>
+  </tr>
+  <tr>
+    <td>:body</td>
+    <td>:description</td>
+    <td>"body-1"</td>
+  </tr>
+  <tr>
+    <td>:slug</td>
+    <td>-</td>
+    <td>"slug-1"</td>
+  </tr>
+  <tr>
+    <td>:domain</td>
+    <td>-</td>
+    <td>"example1.com"</td>
+  </tr>
+  <tr>
+    <td>:subdomain</td>
+    <td>-</td>
+    <td>"blog1"</td>
+  </tr>
+  <tr>
+    <td>:color</td>
+    <td>-</td>
+    <td>"333333"</td>
+  </tr>
+  <tr>
+    <td>:checksum</td>
+    <td>-</td>
+    <td>1</td>
+  </tr>
+</table>
 
 ## Usage
 
@@ -66,7 +143,7 @@ end
 
 Check out FactoryGirl's [GETTING_STARTED](https://github.com/thoughtbot/factory_girl) for more information.
 
-## Additionaly
+## Additional notes
 
 All sequences are free to use and
 could be changed depending on your needs. Just copy the sequence in your
