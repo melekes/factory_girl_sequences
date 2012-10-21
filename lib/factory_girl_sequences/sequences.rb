@@ -29,7 +29,7 @@ module FactoryGirl
     register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
     register_sequence(Sequence.new(:checksum) { |n| n })
-    register_sequence(Sequence.new(:number) { |n| "№ n" })
+    register_sequence(Sequence.new(:number) { |n| "N n" })
   end
 
   # FIXME [AK] Monkey-patching here. There should be another way around.
