@@ -112,6 +112,12 @@ Or install it yourself as:
     <td>slug-1</td>
   </tr>
   <tr>
+    <td>url</td>
+    <td>-</td>
+    <td>String</td>
+    <td>http://example1.com</td>
+  </tr>
+  <tr>
     <td>domain</td>
     <td>-</td>
     <td>String</td>
