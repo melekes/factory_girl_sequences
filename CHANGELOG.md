@@ -1,3 +1,9 @@
+## 0.1.0 / 2012-10-24
+
+* Added url sequence
+* Fixed slug sequence
+* Updated README
+
 ## 0.0.4 / 2012-10-20
 
 * Added travis-ci

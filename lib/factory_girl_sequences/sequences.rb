@@ -2,14 +2,14 @@ module FactoryGirl
 
   def self.register_default_sequences
     # basic types
-    register_sequence(Sequence.new(:integer) { |n| n })
+    register_sequence(Sequence.new(:integer, :aliases => [:checksum]) { |n| n })
     register_sequence(Sequence.new(:string) { |n| "string-#{n}" })
     register_sequence(Sequence.new(:date) { Date.today })
     register_sequence(Sequence.new(:datetime) { Time.current })
     register_sequence(Sequence.new(:boolean) { |n| [false, true][n%2] })
 
     # personal
-    register_sequence(Sequence.new(:name, :aliases => [:login, :first_name, :last_name]) { |n| "name-#{n}" })
+    register_sequence(Sequence.new(:name, :aliases => [:login, :username, :first_name, :last_name]) { |n| "name-#{n}" })
     register_sequence(Sequence.new(:password) { |n| "password-#{n}" })
     register_sequence(Sequence.new(:email) { |n| "person#{n}@example.com" })
 
@@ -21,13 +21,13 @@ module FactoryGirl
     # post (or article)
     register_sequence(Sequence.new(:title) { |n| "Title #{n}" })
     register_sequence(Sequence.new(:body, :aliases => [:description]) { |n| "body-#{n}" })
-    register_sequence(Sequence.new(:slug) { |n| "slug-#{n}" })
+    register_sequence(Sequence.new(:slug) { |n| "slug_#{n}" })
 
     # other
+    register_sequence(Sequence.new(:url) { |n| "http://example#{n}.com" })
     register_sequence(Sequence.new(:domain) { |n| "example#{n}.com" })
     register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
-    register_sequence(Sequence.new(:checksum) { |n| n })
   end
 
   # FIXME [AK] Monkey-patching here. There should be another way around.
