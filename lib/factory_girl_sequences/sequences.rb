@@ -9,7 +9,7 @@ module FactoryGirl
     register_sequence(Sequence.new(:boolean) { |n| [false, true][n%2] })
 
     # personal
-    register_sequence(Sequence.new(:name, :aliases => [:login, :first_name, :last_name]) { |n| "name-#{n}" })
+    register_sequence(Sequence.new(:name, :aliases => [:login, :username, :first_name, :last_name]) { |n| "name-#{n}" })
     register_sequence(Sequence.new(:password) { |n| "password-#{n}" })
     register_sequence(Sequence.new(:email) { |n| "person#{n}@example.com" })
 
