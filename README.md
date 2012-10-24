@@ -24,97 +24,110 @@ Or install it yourself as:
   <tr>
     <th>Name</th>
     <th>Aliases</th>
+    <th>DataType</th>
     <th>Example</th>
   </tr>
   <tr>
-    <td>:integer</td>
-    <td>-</td>
+    <td>integer</td>
+    <td>checksum</td>
+    <td>Integer</td>
     <td>1</td>
   </tr>
   <tr>
-    <td>:string</td>
+    <td>string</td>
     <td>-</td>
-    <td>"string-1"</td>
+    <td>String</td>
+    <td>string-1</td>
   </tr>
   <tr>
-    <td>:date</td>
+    <td>date</td>
     <td>-</td>
+    <td>Date</td>
     <td>Sat, 20 Oct 2012</td>
   </tr>
   <tr>
-    <td>:datetime</td>
+    <td>datetime</td>
     <td>-</td>
+    <td>Time</td>
     <td>Sat, 20 Oct 2012 16:38:59 MSK +04:00</td>
   </tr>
   <tr>
-    <td>:boolean</td>
+    <td>boolean</td>
     <td>-</td>
+    <td>Boolean</td>
     <td>true</td>
   </tr>
   <tr>
-    <td>:name</td>
-    <td>:login, :first_name, :last_name</td>
-    <td>"name-1"</td>
+    <td>name</td>
+    <td>login, first_name, last_name</td>
+    <td>String</td>
+    <td>name-1</td>
   </tr>
   <tr>
-    <td>:password</td>
+    <td>password</td>
     <td>-</td>
-    <td>"password-1"</td>
+    <td>String</td>
+    <td>password-1</td>
   </tr>
   <tr>
-    <td>:email</td>
+    <td>email</td>
     <td>-</td>
-    <td>"person1@example.com"</td>
+    <td>String</td>
+    <td>person1@example.com</td>
   </tr>
   <tr>
-    <td>:ip_address</td>
+    <td>ip_address</td>
     <td>-</td>
-    <td>"192.168.0.1"</td>
+    <td>String</td>
+    <td>192.168.0.1</td>
   </tr>
   <tr>
-    <td>:ip_subnet</td>
+    <td>ip_subnet</td>
     <td>-</td>
-    <td>"192.168.10.0"</td>
+    <td>String</td>
+    <td>192.168.10.0</td>
   </tr>
   <tr>
-    <td>:mac_address</td>
+    <td>mac_address</td>
     <td>-</td>
-    <td>"01:23:45:67:89:01"</td>
+    <td>String</td>
+    <td>01:23:45:67:89:01</td>
   </tr>
   <tr>
-    <td>:title</td>
+    <td>title</td>
     <td>-</td>
-    <td>"Title 1"</td>
+    <td>String</td>
+    <td>Title 1</td>
   </tr>
   <tr>
-    <td>:body</td>
-    <td>:description</td>
-    <td>"body-1"</td>
+    <td>body</td>
+    <td>description</td>
+    <td>String</td>
+    <td>body-1</td>
   </tr>
   <tr>
-    <td>:slug</td>
+    <td>slug</td>
     <td>-</td>
-    <td>"slug-1"</td>
+    <td>String</td>
+    <td>slug-1</td>
   </tr>
   <tr>
-    <td>:domain</td>
+    <td>domain</td>
     <td>-</td>
-    <td>"example1.com"</td>
+    <td>String</td>
+    <td>example1.com</td>
   </tr>
   <tr>
-    <td>:subdomain</td>
+    <td>subdomain</td>
     <td>-</td>
-    <td>"blog1"</td>
+    <td>String</td>
+    <td>blog1</td>
   </tr>
   <tr>
-    <td>:color</td>
+    <td>color</td>
     <td>-</td>
-    <td>"333333"</td>
-  </tr>
-  <tr>
-    <td>:checksum</td>
-    <td>-</td>
-    <td>1</td>
+    <td>String</td>
+    <td>333333</td>
   </tr>
 </table>
 
@@ -159,5 +172,6 @@ project's `test(spec)/factories/sequences.rb` file and modify it.
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+4. Test your changes by running `bundle exec rake cucumber` command
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create new Pull Request
