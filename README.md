@@ -3,6 +3,11 @@
 Collection of useful [FactoryGirl](https://github.com/thoughtbot/factory_girl)
 sequences.
 
+**Important**
+
+This minigem provides only a basic set of standard data. If you need more complex
+data in your application (e.g. US postal code or address), I recommend [Faker](http://github.com/stympy/faker).
+
 ## Installation
 
 Add this line to your application's Gemfile:
