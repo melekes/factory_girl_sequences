@@ -24,6 +24,7 @@ module FactoryGirl
     register_sequence(Sequence.new(:slug) { |n| "slug_#{n}" })
 
     # other
+    register_sequence(Sequence.new(:url) { |n| "http://example#{n}.com" })
     register_sequence(Sequence.new(:domain) { |n| "example#{n}.com" })
     register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
