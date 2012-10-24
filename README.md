@@ -12,7 +12,7 @@ data in your application (e.g. US postal code or address), I recommend [Faker](h
 
 Add this line to your application's Gemfile:
 
-    gem 'factory_girl_sequences'
+    gem 'factory_girl_sequences', :group => :test
 
 Or install it yourself as:
 
