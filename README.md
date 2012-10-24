@@ -1,6 +1,6 @@
 # FactoryGirlSequences [![Build Status](https://secure.travis-ci.org/akalyaev/factory_girl_sequences.png "Build Status")](http://travis-ci.org/akalyaev/factory_girl_sequences)
 
-Collection of useful [FactoryGirl](https://github.com/thoughtbot/factory_girl)
+Collection of useful [FactoryGirl](http://github.com/thoughtbot/factory_girl)
 sequences.
 
 **Important**
@@ -59,7 +59,7 @@ Or install it yourself as:
   </tr>
   <tr>
     <td>name</td>
-    <td>login, first_name, last_name</td>
+    <td>login, username, first_name, last_name</td>
     <td>String</td>
     <td>name-1</td>
   </tr>
@@ -165,7 +165,7 @@ factory :invite do
 end
 ```
 
-Check out FactoryGirl's [GETTING_STARTED](https://github.com/thoughtbot/factory_girl) for more information.
+Check out FactoryGirl's [GETTING_STARTED](http://github.com/thoughtbot/factory_girl) for more information.
 
 ## Additional notes
 
