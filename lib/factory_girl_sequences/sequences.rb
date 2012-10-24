@@ -2,7 +2,7 @@ module FactoryGirl
 
   def self.register_default_sequences
     # basic types
-    register_sequence(Sequence.new(:integer) { |n| n })
+    register_sequence(Sequence.new(:integer, :aliases => [:checksum]) { |n| n })
     register_sequence(Sequence.new(:string) { |n| "string-#{n}" })
     register_sequence(Sequence.new(:date) { Date.today })
     register_sequence(Sequence.new(:datetime) { Time.current })
@@ -27,7 +27,6 @@ module FactoryGirl
     register_sequence(Sequence.new(:domain) { |n| "example#{n}.com" })
     register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
-    register_sequence(Sequence.new(:checksum) { |n| n })
   end
 
   # FIXME [AK] Monkey-patching here. There should be another way around.
