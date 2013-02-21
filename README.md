@@ -175,3 +175,13 @@ Check out FactoryGirl's [GETTING_STARTED](http://github.com/thoughtbot/factory_g
 4. Test your changes by running `bundle exec rake cucumber` command
 5. Push to the branch (`git push origin my-new-feature`)
 6. Create new Pull Request
+
+## Credits
+
+Created by [Anton Kalyaev](http://github.com/akalyaev)
+
+Thank you to all our amazing [contributors](http://github.com/akalyaev/factory_girl_sequences/contributors)!
+
+## License
+
+This gem is released under the [MIT License](http://www.opensource.org/licenses/MIT).
