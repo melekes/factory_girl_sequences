@@ -4,7 +4,7 @@ module FactoryGirl
     # basic types
     register_sequence(Sequence.new(:integer, :aliases => [:checksum]) { |n| n })
     register_sequence(Sequence.new(:string) { |n| "string-#{n}" })
-    register_sequence(Sequence.new(:date) { Date.today })
+    register_sequence(Sequence.new(:date) { Date.current })
     register_sequence(Sequence.new(:datetime) { Time.current })
     register_sequence(Sequence.new(:boolean) { |n| [false, true][n%2] })
 
