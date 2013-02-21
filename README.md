@@ -167,12 +167,6 @@ end
 
 Check out FactoryGirl's [GETTING_STARTED](http://github.com/thoughtbot/factory_girl) for more information.
 
-## Additional notes
-
-All sequences are free to use and
-could be changed depending on your needs. Just copy the sequence in your
-project's `test(spec)/factories/sequences.rb` file and modify it.
-
 ## Contributing
 
 1. Fork it
