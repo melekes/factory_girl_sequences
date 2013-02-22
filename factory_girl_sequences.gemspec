@@ -19,10 +19,6 @@ Gem::Specification.new do |gem|
   gem.rdoc_options      = %w(--line-numbers --inline-source --title factory_girl_sequences --main README.md)
   gem.extra_rdoc_files  = %w(README.md CHANGELOG.md LICENSE)
 
-  gem.add_runtime_dependency('factory_girl', '~> 4.1.0')
-
-  gem.add_development_dependency('rake')
-  gem.add_development_dependency('cucumber', '~> 1.0.0')
-  gem.add_development_dependency('aruba')
-  gem.add_development_dependency('rails', '3.0.7')
+  gem.add_dependency 'factory_girl', '~> 4.0'
+  gem.add_dependency 'activesupport', '>= 3.0.0'
 end
