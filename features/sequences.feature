@@ -4,7 +4,6 @@ Feature:
   Background:
     Given I successfully run `bundle exec rails new testapp --skip-bundle`
     And I cd to "testapp"
-    And I add "therubyracer" as a dependency
     And I add "factory_girl_rails" as a dependency
     And I add "factory_girl_sequences" from this project as a dependency
 
