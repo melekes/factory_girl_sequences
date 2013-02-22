@@ -1,3 +1,10 @@
+## 4.0.0 / 2013-02-22
+
+* updated factory_girl version
+* added appraisal
+* rewrite tests
+* created separate reload method
+
 ## 0.1.1 / 2012-10-27
 
 * Updated README
