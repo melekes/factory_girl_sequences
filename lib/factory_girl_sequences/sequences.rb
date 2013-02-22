@@ -29,15 +29,6 @@ module FactoryGirl
     register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
   end
-
-  # FIXME [AK] Monkey-patching here. There should be another way around.
-  def self.reload
-    reset_configuration
-    register_default_strategies
-    register_default_callbacks
-    register_default_sequences
-    find_definitions
-  end
 end
 
 FactoryGirl.register_default_sequences
