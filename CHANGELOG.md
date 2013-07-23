@@ -1,3 +1,7 @@
+## 4.0.1 / 2013-07-23
+
+* added timestamp sequence
+
 ## 4.0.0 / 2013-02-22
 
 * updated factory_girl version
