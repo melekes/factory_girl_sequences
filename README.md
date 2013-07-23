@@ -135,6 +135,12 @@ Or install it yourself as:
     <td>String</td>
     <td>333333</td>
   </tr>
+  <tr>
+    <td>timestamp</td>
+    <td>-</td>
+    <td>Fixnum</td>
+    <td>1374582311</td>
+  </tr>
 </table>
 
 ## Usage
