@@ -76,6 +76,12 @@ Or install it yourself as:
     <td>person1@example.com</td>
   </tr>
   <tr>
+    <td>port</td>
+    <td>-</td>
+    <td>Integer</td>
+    <td>1025</td>
+  </tr>
+  <tr>
     <td>ip_address</td>
     <td>-</td>
     <td>String</td>
@@ -101,7 +107,7 @@ Or install it yourself as:
   </tr>
   <tr>
     <td>body</td>
-    <td>description</td>
+    <td>description, text, content</td>
     <td>String</td>
     <td>body-1</td>
   </tr>
@@ -140,6 +146,12 @@ Or install it yourself as:
     <td>-</td>
     <td>Fixnum</td>
     <td>1374582311</td>
+  </tr>
+  <tr>
+    <td>token</td>
+    <td>-</td>
+    <td>String</td>
+    <td>JS74sef41ZosXek1ndvY</td>
   </tr>
 </table>
 
