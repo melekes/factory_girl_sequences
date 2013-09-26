@@ -30,6 +30,7 @@ module FactoryGirl
     register_sequence(Sequence.new(:subdomain) { |n| "blog#{n}" })
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
     register_sequence(Sequence.new(:timestamp) { Time.current.to_i })
+    register_sequence(Sequence.new(:token) { |n| SecureRandom.base64(15).tr('+/=lIO0', "token#{n}") })
   end
 end
 
