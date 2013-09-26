@@ -14,6 +14,7 @@ module FactoryGirl
     register_sequence(Sequence.new(:email) { |n| "person#{n}@example.com" })
 
     # network
+    register_sequence(Sequence.new(:port) { |n| (1024 + n % 49151) })
     register_sequence(Sequence.new(:ip_address) { |n| "192.168.0.#{n%256}" })
     register_sequence(Sequence.new(:ip_subnet) { |n| "192.168.#{n%256}.0" })
     register_sequence(Sequence.new(:mac_address) { |n| "01:23:45:67:89:" + ("%02x" % "#{n%256}") })
