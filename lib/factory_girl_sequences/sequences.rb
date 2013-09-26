@@ -21,7 +21,7 @@ module FactoryGirl
 
     # post (or article)
     register_sequence(Sequence.new(:title) { |n| "Title #{n}" })
-    register_sequence(Sequence.new(:body, :aliases => [:description]) { |n| "body-#{n}" })
+    register_sequence(Sequence.new(:body, :aliases => [:description, :text, :content]) { |n| "body-#{n}" })
     register_sequence(Sequence.new(:slug) { |n| "slug_#{n}" })
 
     # other
