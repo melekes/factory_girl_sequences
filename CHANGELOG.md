@@ -1,3 +1,8 @@
+## 4.1.0 / 2013-11-14
+
+* added port and token sequences [Andrew Kulakov]
+* aliased body as text / content [Andrew Kulakov]
+
 ## 4.0.0 / 2013-02-22
 
 * updated factory_girl version
