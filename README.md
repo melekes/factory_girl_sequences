@@ -185,7 +185,7 @@ end
 
 Check out FactoryGirl's [GETTING_STARTED](http://github.com/thoughtbot/factory_girl) for more information.
 
-### Spork or tconsole
+### Spork or TConsole
 
 For whose of you who are using spork or tconsole, consider adding `FactoryGirlSequences.reload` right after `FactoryGirl.reload`.
 
