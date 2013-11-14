@@ -9,6 +9,7 @@ Gem::Specification.new do |gem|
   gem.description   = %q{factory_girl_sequences provides a collection of useful FactoryGirl sequences}
   gem.summary       = %q{Collection of useful FactoryGirl sequences}
   gem.homepage      = "http://github.com/akalyaev/factory_girl_sequences"
+  gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
