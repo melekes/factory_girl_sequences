@@ -153,6 +153,12 @@ Or install it yourself as:
     <td>String</td>
     <td>JS74sef41ZosXek1ndvY</td>
   </tr>
+  <tr>
+    <td>seat</td>
+    <td>-</td>
+    <td>String</td>
+    <td>01A</td>
+  </tr>
 </table>
 
 ## Usage

@@ -31,6 +31,7 @@ module FactoryGirl
     register_sequence(Sequence.new(:color) { |n| "%06d" % n })
     register_sequence(Sequence.new(:timestamp) { Time.current.to_i })
     register_sequence(Sequence.new(:token) { |n| SecureRandom.base64(15).tr('+/=lIO0', "token#{n}") })
+    register_sequence(Sequence.new(:seat, 0) { |n| "%02d" % (n % 50 + 1) + ('A'..'Z').to_a[n / 50 % 26] })
   end
 end
 
