@@ -1,3 +1,7 @@
+## 4.2.0 / 2014-01-09
+
+* added a seat sequence [Hans Lemuet]
+
 ## 4.1.0 / 2013-11-14
 
 * added port and token sequences [Andrew Kulakov]
