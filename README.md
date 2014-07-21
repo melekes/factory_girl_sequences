@@ -212,4 +212,4 @@ Thank you to all our amazing [contributors](http://github.com/akalyaev/factory_g
 
 ## License
 
-FactoryGirlSequences is Copyright © 2012-2013 Anton Kalyaev. It is free software, and may be redistributed under the terms specified in the [MIT License](http://www.opensource.org/licenses/MIT) file.
+FactoryGirlSequences is Copyright © 2012-2014 Anton Kalyaev. It is free software, and may be redistributed under the terms specified in the [MIT License](http://www.opensource.org/licenses/MIT) file.
