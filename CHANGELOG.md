@@ -1,3 +1,7 @@
+## 4.2.0 / 2014-07-31
+
+* added uuid sequence [Kirill Platonov]
+
 ## 4.2.0 / 2014-01-09
 
 * added a seat sequence [Hans Lemuet]
