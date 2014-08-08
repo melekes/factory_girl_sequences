@@ -1,4 +1,8 @@
-## 4.2.0 / 2014-07-31
+## 4.3.1 / 2014-08-08
+
+* added few aliases [Kirill Platonov]
+
+## 4.3.0 / 2014-07-31
 
 * added uuid sequence [Kirill Platonov]
 
