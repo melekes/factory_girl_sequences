@@ -29,7 +29,7 @@ Or install it yourself as:
   </tr>
   <tr>
     <td>integer</td>
-    <td>checksum</td>
+    <td>checksum, int</td>
     <td>Integer</td>
     <td>1</td>
   </tr>
@@ -56,6 +56,12 @@ Or install it yourself as:
     <td>-</td>
     <td>Boolean</td>
     <td>true</td>
+  </tr>
+  <tr>
+    <td>uuid</td>
+    <td>guid</td>
+    <td>String</td>
+    <td>0a4ea40d-e7ed-4fc1-890c-7af86c9c3a07</td>
   </tr>
   <tr>
     <td>name</td>
