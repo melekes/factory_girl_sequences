@@ -2,14 +2,14 @@ module FactoryGirl
 
   def self.register_default_sequences
     # basic types
-    register_sequence(Sequence.new(:integer, :aliases => [:checksum]) { |n| n })
+    register_sequence(Sequence.new(:integer, :aliases => [:checksum, :int]) { |n| n })
     register_sequence(Sequence.new(:string) { |n| "string-#{n}" })
     register_sequence(Sequence.new(:date) { Date.current })
     register_sequence(Sequence.new(:datetime) { Time.current })
     register_sequence(Sequence.new(:boolean) { |n| [false, true][n%2] })
 
     # personal
-    register_sequence(Sequence.new(:uuid) { SecureRandom.uuid })
+    register_sequence(Sequence.new(:uuid, :aliases => [:guid]) { SecureRandom.uuid })
     register_sequence(Sequence.new(:name, :aliases => [:login, :username, :first_name, :last_name]) { |n| "name-#{n}" })
     register_sequence(Sequence.new(:password) { |n| "password-#{n}" })
     register_sequence(Sequence.new(:email) { |n| "person#{n}@example.com" })
