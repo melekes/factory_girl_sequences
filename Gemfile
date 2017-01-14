@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rake'
-gem 'appraisal', '~> 0.5.0'
-gem 'cucumber', '~> 1.2.1'
-gem 'aruba', '~> 0.5.1'
+
+group :test do
+  gem 'cucumber', '~> 2.4.0'
+  gem 'aruba', '~> 0.14.2'
+  gem "appraisal", '~> 2.1'
+end
