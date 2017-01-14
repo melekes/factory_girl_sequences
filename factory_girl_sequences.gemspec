@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/factory_girl_sequences/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "factory_girl_sequences"
-  gem.version       = FactoryGirlSequences::VERSION
-  gem.authors       = ["Anton Kalyaev"]
+  gem.version       = "4.3.1"
+  gem.authors       = ["Anton Kaliaev"]
   gem.email         = ["anton.kalyaev@gmail.com"]
   gem.description   = %q{factory_girl_sequences provides a collection of useful FactoryGirl sequences}
   gem.summary       = %q{Collection of useful FactoryGirl sequences}
