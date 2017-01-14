@@ -212,10 +212,6 @@ For whose of you who are using spork or tconsole, consider adding `FactoryGirlSe
 
 ## Credits
 
-Created by [Anton Kalyaev](http://github.com/melekes)
+Created by [Anton Kaliaev](http://github.com/melekes)
 
 Thank you to all our amazing [contributors](http://github.com/melekes/factory_girl_sequences/contributors)!
-
-## License
-
-FactoryGirlSequences is Copyright © 2012-2014 Anton Kalyaev. It is free software, and may be redistributed under the terms specified in the [MIT License](http://www.opensource.org/licenses/MIT) file.
