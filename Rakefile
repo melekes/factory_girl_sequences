@@ -1,23 +1,18 @@
-require 'bundler/setup'
-require 'bundler/gem_tasks'
+#!/usr/bin/env rake
+require 'rubygems'
+require 'bundler'
+require 'rake'
+require 'appraisal'
 require 'cucumber/rake/task'
 
 Cucumber::Rake::Task.new(:cucumber) do |t|
-  t.fork = true
   t.cucumber_opts = ['--format', (ENV['CUCUMBER_FORMAT'] || 'progress')]
 end
 
-require 'appraisal'
+task test_suite: [:cucumber]
 
-desc 'Run the test suite'
-task :default do |t|
-  if ENV['BUNDLE_GEMFILE'] =~ /gemfiles/
-    exec 'rake cucumber'
-  else
-    Rake::Task['appraise'].execute
-  end
-end
-
-task :appraise => ['appraisal:install'] do |t|
-  exec 'rake appraisal'
+if !ENV['APPRAISAL_INITIALIZED'] && !ENV['TRAVIS']
+  task :default => :appraisal
+else
+  task default: :test_suite
 end
