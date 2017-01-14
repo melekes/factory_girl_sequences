@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   gem.extra_rdoc_files  = %w(README.md CHANGELOG.md LICENSE)
 
   gem.add_dependency 'factory_girl', '~> 4.0'
-  gem.add_dependency 'activesupport', '>= 3.0.0'
+  gem.add_dependency 'activesupport', '>= 4.2'
 end
