@@ -1,4 +1,4 @@
-# FactoryGirlSequences [![Build Status](https://secure.travis-ci.org/melekes/factory_girl_sequences.png "Build Status")](http://travis-ci.org/melekes/factory_girl_sequences) [![Gem Version](https://badge.fury.io/rb/factory_girl_sequences.png)](http://badge.fury.io/rb/factory_girl_sequences) [![Dependency Status](https://gemnasium.com/melekes/factory_girl_sequences.png)](https://gemnasium.com/melekes/factory_girl_sequences)
+# FactoryGirlSequences [![Build Status](https://secure.travis-ci.org/melekes/factory_girl_sequences.png "Build Status")](http://travis-ci.org/melekes/factory_girl_sequences) [![Gem Version](https://badge.fury.io/rb/factory_girl_sequences.png)](http://badge.fury.io/rb/factory_girl_sequences)
 
 Collection of useful [FactoryGirl](http://github.com/thoughtbot/factory_girl)
 sequences.
