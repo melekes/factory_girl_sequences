@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["anton.kalyaev@gmail.com"]
   gem.description   = %q{factory_girl_sequences provides a collection of useful FactoryGirl sequences}
   gem.summary       = %q{Collection of useful FactoryGirl sequences}
-  gem.homepage      = "http://github.com/akalyaev/factory_girl_sequences"
+  gem.homepage      = "http://github.com/melekes/factory_girl_sequences"
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($\)

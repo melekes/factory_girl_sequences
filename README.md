@@ -1,4 +1,4 @@
-# FactoryGirlSequences [![Build Status](https://secure.travis-ci.org/akalyaev/factory_girl_sequences.png "Build Status")](http://travis-ci.org/akalyaev/factory_girl_sequences) [![Gem Version](https://badge.fury.io/rb/factory_girl_sequences.png)](http://badge.fury.io/rb/factory_girl_sequences) [![Dependency Status](https://gemnasium.com/akalyaev/factory_girl_sequences.png)](https://gemnasium.com/akalyaev/factory_girl_sequences)
+# FactoryGirlSequences [![Build Status](https://secure.travis-ci.org/melekes/factory_girl_sequences.png "Build Status")](http://travis-ci.org/melekes/factory_girl_sequences) [![Gem Version](https://badge.fury.io/rb/factory_girl_sequences.png)](http://badge.fury.io/rb/factory_girl_sequences) [![Dependency Status](https://gemnasium.com/melekes/factory_girl_sequences.png)](https://gemnasium.com/melekes/factory_girl_sequences)
 
 Collection of useful [FactoryGirl](http://github.com/thoughtbot/factory_girl)
 sequences.
@@ -212,9 +212,9 @@ For whose of you who are using spork or tconsole, consider adding `FactoryGirlSe
 
 ## Credits
 
-Created by [Anton Kalyaev](http://github.com/akalyaev)
+Created by [Anton Kalyaev](http://github.com/melekes)
 
-Thank you to all our amazing [contributors](http://github.com/akalyaev/factory_girl_sequences/contributors)!
+Thank you to all our amazing [contributors](http://github.com/melekes/factory_girl_sequences/contributors)!
 
 ## License
 
