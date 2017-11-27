@@ -5,8 +5,8 @@ Gem::Specification.new do |gem|
   gem.version       = "4.8.0"
   gem.authors       = ["Anton Kaliaev"]
   gem.email         = ["anton.kalyaev@gmail.com"]
-  gem.description   = %q{factory_girl_sequences provides a collection of useful FactoryGirl sequences}
-  gem.summary       = %q{Collection of useful FactoryGirl sequences}
+  gem.description   = %q{factory_girl_sequences provides a collection of useful FactoryBot sequences}
+  gem.summary       = %q{Collection of useful FactoryBot sequences}
   gem.homepage      = "http://github.com/melekes/factory_girl_sequences"
   gem.license       = "MIT"
 
@@ -19,6 +19,6 @@ Gem::Specification.new do |gem|
   gem.rdoc_options      = %w(--line-numbers --inline-source --title factory_girl_sequences --main README.md)
   gem.extra_rdoc_files  = %w(README.md CHANGELOG.md LICENSE)
 
-  gem.add_dependency 'factory_girl', '~> 4.0'
+  gem.add_dependency 'factory_bot', '~> 4.0'
   gem.add_dependency 'activesupport', '>= 4.2'
 end
