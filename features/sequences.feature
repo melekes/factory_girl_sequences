@@ -17,8 +17,8 @@ Feature:
       require 'test_helper'
 
       class UserTest < ActiveSupport::TestCase
-        test "factory_girl should know name sequence" do
-          user = FactoryGirl.create(:user)
+        test "factory_bot should know name sequence" do
+          user = FactoryBot.create(:user)
           assert user.name
         end
       end

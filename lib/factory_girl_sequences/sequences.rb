@@ -1,4 +1,4 @@
-module FactoryGirl
+module FactoryBot
 
   def self.register_default_sequences
     # basic types
@@ -36,4 +36,4 @@ module FactoryGirl
   end
 end
 
-FactoryGirl.register_default_sequences
+FactoryBot.register_default_sequences
