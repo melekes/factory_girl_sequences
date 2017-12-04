@@ -17,7 +17,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.rdoc_options      = %w(--line-numbers --inline-source --title factory_girl_sequences --main README.md)
-  gem.extra_rdoc_files  = %w(README.md CHANGELOG.md LICENSE)
+  gem.extra_rdoc_files  = %w(README.md LICENSE)
 
   gem.add_dependency 'factory_bot', '~> 4.0'
   gem.add_dependency 'activesupport', '>= 4.2'
