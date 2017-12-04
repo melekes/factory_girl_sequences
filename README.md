@@ -218,6 +218,10 @@ Thank you to all our amazing [contributors](http://github.com/melekes/factory_gi
 
 ## Changelog
 
+### 4.9.0 / 2017-12-04
+
+* factory_girl now factory_bot [Pavel Kalashnikov]
+
 ### 4.8.0 / 2017-01-14
 
 * updated dependencies (`activesupport >= 4.2`)
